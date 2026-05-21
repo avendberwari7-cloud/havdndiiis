@@ -1,0 +1,11 @@
+[nixpacks]
+plan = "python"
+
+[nixpacks.python]
+packages = ["ffmpeg"]
+
+[nixpacks.build]
+cmd = "pip install -r requirements.txt"
+
+[nixpacks.start]
+cmd = "python main.py"
